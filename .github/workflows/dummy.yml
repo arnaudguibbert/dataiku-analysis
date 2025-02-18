@@ -1,0 +1,19 @@
+name: dummy-workflow
+on: push
+jobs: 
+    dummy-job: 
+        runs-on: ubuntu-latest
+        steps:
+        # Action available in github marketplace
+        # This allow to connect to the current git repo
+        - name: checkout action
+          uses: actions/checkout@4.0.1
+
+        - name: read file
+          run: cat README.md
+
+        # Multiple line command
+        - name: dummy message
+          run: |
+            echo Hello
+            ls -lt
