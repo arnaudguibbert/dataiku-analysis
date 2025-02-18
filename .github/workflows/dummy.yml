@@ -7,7 +7,7 @@ jobs:
         # Action available in github marketplace
         # This allow to connect to the current git repo
         - name: checkout action
-          uses: actions/checkout@4.0.1
+          uses: actions/checkout@v4.2.2
 
         - name: read file
           run: cat README.md
