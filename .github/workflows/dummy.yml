@@ -25,6 +25,7 @@ jobs:
             path: ./test.txt
 
     artifact-job:
+        needs: dummy-job
         runs-on: ubuntu-latest
         steps:
           - name: download-artifact
